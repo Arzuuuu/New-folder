@@ -1,0 +1,130 @@
+/* General styles ... */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    border-bottom: 2px solid #fff;
+  }
+  
+  header {
+    background-image: url('path/to/your/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .hero-text {
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    border-radius: 80px;
+  }
+  
+  .btn:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  section {
+    padding: 50px;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+
+/* General styles ... */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .nav-links.show {
+      display: flex;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      width: 150px;
+    }
+  
+    .nav-links li {
+      margin: 10px;
+    }
+  
+    .menu-toggle {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      padding: 10px;
+    }
+  
+    .bar {
+      height: 2px;
+      width: 25px;
+      background-color: #fff;
+      margin: 5px;
+      transition: 0.4s;
+    }
+  
+    .change .bar {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .change .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .change .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+  
