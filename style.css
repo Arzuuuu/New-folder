@@ -38,7 +38,6 @@ nav {
   border-bottom: none;
 }
 
-
 .content {
   flex: 1;
 }
@@ -55,24 +54,29 @@ header {
 }
 
 .hero-text {
-  text-align: center;
+  text-align: left;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 .hero-text h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-/* Add styles for the "About Me" section */
+
 .hero-text p {
   margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.hero-text .left-text{
-  margin: 10%;
+.hero-text .left-text {
+  margin: 2%;
 }
 
-/* Styles for the download button */
+
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -80,7 +84,7 @@ header {
     to right,
     #ff5722,
     #ff9800
-  ); /* Beautiful gradient */
+  ); 
   color: #fff;
   border: none;
   border-radius: 80px;
@@ -94,8 +98,8 @@ header {
     to right,
     #ff9800,
     #ff5722
-  ); /* Gradient on hover */
-  transform: scale(1.05); /* Add a slight scale animation on hover */
+  ); 
+  transform: scale(1.05); 
 }
 
 section {
@@ -105,6 +109,53 @@ section {
 section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+
+.left img {
+  width: 20rem;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+
+.right {
+  padding-left: 20px;
+  padding-top: 20%;
+}
+
+.right-text {
+  display: flex;
+}
+
+.element {
+  font-size: 1.8rem;
+  position: relative;
+  color: orangered;
+  max-width: 100%;
+  padding-right: 40px;
+  width: 100%;
+  width: 90px;
+  white-space: nowrap;
+}
+
+.introanimate {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* General styles ... */
@@ -156,7 +207,30 @@ section h2 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 
-  
+  .hero-text {
+    flex-direction: column;
+    
+    align-items: center;
+  }
+
+  .left {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .right, {
+    padding: 0; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+  }
+
+
+  .element {
+    width: 50px;
+    align-items: center;
+  }
 }
 
 #projects {
