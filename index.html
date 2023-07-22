@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arzu's Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,500;1,700;1,800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -28,14 +33,18 @@
     <div class="hero-text">
 
       <div class="left">
-        <img src="download-removebg-preview.png" alt="">
+        <img src="./img/download-removebg-preview.png" alt="">
       </div>
 
       <div class="right">
         <div class="right-text">
-          <h3>Hi, My name is Arzu</h3>
+          <h3>HI THERE, I'M <br><span id="orangered">Arzu</span>
+            <br>
+            <span>I AM A PASSIONATE</span>
+          </h3>
+
         </div>
-        
+
         <div class="element">
           <span id="element"></span>
         </div>
@@ -43,18 +52,27 @@
           <a href="resume.pdf" download class="btn">Download Resume</a>
         </div>
       </div>
-      
+
     </div>
-    
+
   </header>
-  
-  
+
+
 
   <section id="skills">
-    <h2>Skills</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non turpis sit amet quam egestas euismod.
-      Suspendisse varius justo nec justo aliquam venenatis. Fusce eu est et quam tempor bibendum eget ut turpis. Sed
-      dictum nec lorem a vulputate.</p>
+    <div class="skills-elements">
+      <h2>SKILLS & TOOLS</h2>
+      <p>My ToolBox & Things I Can Do</p>
+      <div class="skills-img">
+        <img src="./img/html5.png" alt="">
+        <img src="./img/css-3.png" alt="">
+        <img src="./img/js.png" alt="">
+        <img src="./img/github.png" alt="">
+        <img src="./img/" alt="">
+        <img src="./img/responsive.png" alt="">
+        <img src="./img/visual-studio.png" alt="">
+      </div>
+    </div>
   </section>
 
   <section id="projects">
@@ -74,21 +92,23 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget fermentum orci. Aenean convallis purus eu
-      semper tempus.</p>
+    <p>mailto:arzu.inbox@gmail.com</p>
+    <p>Contact: 91+ 8978418400</p>
+    <p><a href="https://www.linkedin.com/in/arzu-5342b01a1/">LinkedIn</a></p>
+    <p><a href="https://github.com/Arzuuuu">GitHub</a></p>
   </section>
   <footer>
 
   </footer>
-  
+
   <script src="script.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Web Designer','Video Editor'],
+      strings: ['Web Developer', 'Web Designer', 'Video Editor'],
       typeSpeed: 50,
       loop: true,
-      backDelay:2000,
+      backDelay: 2000,
     });
   </script>
 </body>

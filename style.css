@@ -1,6 +1,6 @@
 /* General styles ... */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -55,7 +55,6 @@ header {
 
 .hero-text {
   text-align: left;
-
   display: flex;
   justify-content: space-between;
 }
@@ -125,13 +124,22 @@ section h2 {
   margin-left: 20px;
 }
 
-.right {
-  padding-left: 20px;
-  padding-top: 20%;
+.right{
+  padding-top:10%;
+  font-weight: bold;
 }
 
 .right-text {
   display: flex;
+  /* flex-direction: column; */
+  /* font-size: 40px; */
+  /* padding-bottom: -10px; */
+}
+
+#orangered{
+  color:orangered;
+  font-size: 45px;
+  
 }
 
 .element {
@@ -147,6 +155,10 @@ section h2 {
 
 .introanimate {
   animation: fadeIn 1s ease-in-out;
+}
+
+.skills-img img{
+  width: 100px;
 }
 
 @keyframes fadeIn {
@@ -224,6 +236,7 @@ section h2 {
     display: flex;
     flex-direction: column;
     text-align: center; 
+    width: 100%;
   }
 
 
