@@ -43,7 +43,7 @@ nav {
 }
 
 header {
-  background-image: url("path/to/your/background-image.jpg");
+  /* background-image: url("path/to/your/background-image.jpg"); */
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -157,8 +157,90 @@ section h2 {
   animation: fadeIn 1s ease-in-out;
 }
 
-.skills-img img{
-  width: 100px;
+.skills-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 boxes in a row for larger screens */
+  gap: 10px; /* Gap between the boxes */
+}
+
+.skills-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the content horizontally */
+  justify-content: center; /* Center align the content vertically */
+  text-align: center;
+  padding: 20px;
+}
+
+.skills-img img {
+  max-width: 60%; /* Set the maximum width for the images */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+#contact{
+  background-color: rgba(0, 0, 0, 0.962);
+  color:white;
+  padding:50px;
+  text-align: center;
+
+  
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+
+
+.contact-icons {
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.contact-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-form {
+  flex: 2;
+  margin-top: 20px;
+  max-width: 400px; 
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #ff5722, #ff9800);
+  color: #fff;
+  border: none;
+  border-radius: 80px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out, transform 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(to right, #ff9800, #ff5722);
+  transform: scale(1.05);
 }
 
 @keyframes fadeIn {
@@ -230,21 +312,32 @@ section h2 {
     margin-bottom: 20px;
   }
 
-  .right, {
-    padding: 0; 
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center; 
-    width: 100%;
-  }
 
 
   .element {
     width: 50px;
     align-items: center;
   }
+
+  .skills-img {
+    grid-template-columns: repeat(2, 1fr); /* 2 boxes in a row for smaller screens */
+  }
+
+
+  .contact-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-icons {
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    margin-top: 40px;
+  }
 }
+
 
 #projects {
   padding: 50px;

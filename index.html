@@ -49,7 +49,7 @@
           <span id="element"></span>
         </div>
         <div class="download-btn">
-          <a href="resume.pdf" download class="btn">Download Resume</a>
+          <a href="<div> " download class="btn">Download Resume</a>
         </div>
       </div>
 
@@ -64,13 +64,13 @@
       <h2>SKILLS & TOOLS</h2>
       <p>My ToolBox & Things I Can Do</p>
       <div class="skills-img">
-        <img src="./img/html5.png" alt="">
-        <img src="./img/css-3.png" alt="">
-        <img src="./img/js.png" alt="">
-        <img src="./img/github.png" alt="">
-        <img src="./img/" alt="">
-        <img src="./img/responsive.png" alt="">
-        <img src="./img/visual-studio.png" alt="">
+        <div> <img src="./img/html5.png" alt=""></div>
+        <div> <img src="./img/css-3.png" alt=""></div>
+        <div> <img src="./img/js.png" alt=""></div>
+        <div> <img src="./img/github.png" alt=""></div>
+        <!-- <div> <img src="./img/" alt=""></div> -->
+        <div> <img src="./img/responsive.png" alt=""></div>
+        <div> <img src="./img/visual-studio.png" alt=""></div>
       </div>
     </div>
   </section>
@@ -90,16 +90,68 @@
     </div>
   </section>
 
+
+<!-- 
   <section id="contact">
     <h2>Contact</h2>
     <p>mailto:arzu.inbox@gmail.com</p>
     <p>Contact: 91+ 8978418400</p>
     <p><a href="https://www.linkedin.com/in/arzu-5342b01a1/">LinkedIn</a></p>
     <p><a href="https://github.com/Arzuuuu">GitHub</a></p>
-  </section>
-  <footer>
+  </section> -->
 
-  </footer>
+  <!-- <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-content">
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/arzu-5342b01a1/" target="_blank">
+          <img src="./img/linkedin-icon.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Arzuuuu" target="_blank">
+          <img src="./img/github-icon.png" alt="GitHub">
+        </a>
+      </div>
+      <div class="contact-form">
+        <form action="mailto:arzu.inbox@gmail.com" method="post" enctype="text/plain">
+          <input type="text" placeholder="Your Name" name="name" required>
+          <input type="email" placeholder="Your Email" name="email" required>
+          <textarea placeholder="Your Message" name="message" required></textarea>
+          <button type="submit" class="btn">Send Email</button>
+        </form>
+      </div>
+    </div>
+  </section> -->
+
+
+  
+  
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-content">
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/arzu-5342b01a1/">
+          <img src="img/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Arzuuuu">
+          <img src="img/github.png" alt="GitHub">
+        </a>
+        <!-- Add other social media icons with their respective links -->
+      </div>
+      <div class="contact-form">
+        <form action="send_email.php" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit">Send Email</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- <footer>
+
+  </footer> -->
 
   <script src="script.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
