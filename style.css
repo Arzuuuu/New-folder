@@ -46,11 +46,19 @@ header {
   /* background-image: url("path/to/your/background-image.jpg"); */
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
+}
+
+
+/*  */
+/*  */
+
+h2 {
+  text-align: center;
 }
 
 .hero-text {
@@ -173,7 +181,7 @@ section h2 {
 }
 
 .skills-img img {
-  max-width: 60%; /* Set the maximum width for the images */
+  max-width: 20%; /* Set the maximum width for the images */
   height: auto; /* Automatically adjust the height to maintain aspect ratio */
 }
 
